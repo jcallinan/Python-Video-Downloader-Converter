@@ -36,7 +36,7 @@ def get_video_url():
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([search_item])
     bold_font2 = tkfont.Font(family="Helvetica", size=10, weight="bold")
-    label_done = tk.Label(root, text="Video Downloaded", width=200, bg="#263d42")
+    label_done = tk.Label(root, text="Video Downloaded", width=200, bg="#cdcbcb")
     label_done.config(font=bold_font2)
     canvas1.create_window(600, 600, window=label_done)
 
