@@ -30,7 +30,7 @@ def get_video_url():
         'ignoreerrors': True
     }
 
-    os.chdir('E:/YouTubeDownloads')
+    os.chdir('C:/YouTubeDownloads')
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([search_item])
     bold_font2 = tkfont.Font(family="Helvetica", size=10, weight="bold")
