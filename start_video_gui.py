@@ -1,7 +1,6 @@
-'''
-A simple python based gui application to download videos from youtube.
-- By B.Shubankar
-'''
+"""
+
+"""
 
 import tkinter as tk
 import os
@@ -27,7 +26,6 @@ canvas1.create_window(300, 100, window=download_entry)
 def get_video_url():
     search_item = download_entry.get()
     ydl_opts = {
-        'format': 'best',
         'extract-audio': True,
         'ignoreerrors': True
     }
